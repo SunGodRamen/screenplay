@@ -1,0 +1,119 @@
+Title: Lecture 1
+Credit: Taught by Professor Mikael Giordi
+Draft: 1
+
+.INT. STANFORD CLASSROOM - DAY
+
+A group of eager students enter the classroom and take their seats. They whisper excitedly about the course and its eccentric professor.
+
+The door opens and PROFESSOR MIKAEL GIORDI, a middle-aged man with a wild beard and disheveled hair, bursts into the room. He carries a worn-out leather satchel filled with various electronic components.
+
+PROFESSOR GIORDI
+(energetically)
+Welcome to MIDI for Embedded Device Engineers! I'm Professor Giordi, and I'll be your guide on this fascinating journey. Please, call me Mikael!
+
+The students exchange smiles, already intrigued by their eccentric professor.
+
+PROFESSOR GIORDI
+(continuing)
+Before we dive in, I want to set the tone for this course. This isn't about getting an easy A. I'm looking for passion, curiosity, and commitment. If you're here to truly explore the world of MIDI, then you're in the right place!
+
+The students nod, their excitement growing.
+
+PROFESSOR GIORDI
+(continuing)
+In this course, we'll learn about the MIDI standard, its history, and how it has revolutionized the music industry. We'll also focus on creating innovative MIDI devices using embedded systems.
+
+Giordi starts unpacking his satchel, revealing various MIDI devices and components.
+
+PROFESSOR GIORDI
+(continuing)
+For our first exercise, I want you to pair up and explore one of these devices. As you do so, think about the following questions:
+
+Giordi writes the questions on the board:
+
+How does this device use the MIDI standard?
+What kind of user experience does it provide?
+How could it be improved?
+PROFESSOR GIORDI
+(continuing)
+I'll be walking around to assist and answer any questions. This is just the beginning, my friends. Let's get started!
+
+The students eagerly pair up and dive into their first exercise. Professor Giordi moves among them, offering guidance and sharing his enthusiasm for MIDI technology.
+
+Students are deeply engaged with the MIDI devices, discussing their observations and ideas with their partners. Professor Giordi continues to move around the room, offering guidance and sharing his enthusiasm.
+
+After a while, Giordi calls the class back to attention.
+
+PROFESSOR GIORDI
+(smiling)
+I can see the passion and creativity in this room! Let's come together and share our findings.
+
+Giordi invites a few groups to present their observations and ideas. The students offer insightful and imaginative suggestions, sparking animated discussions among the class.
+
+PROFESSOR GIORDI
+(continuing)
+Fantastic work, everyone! Now that we've explored some existing MIDI devices, let's dive deeper into the MIDI standard itself.
+
+Giordi switches on a projector and starts a presentation on the history and development of MIDI.
+
+PROFESSOR GIORDI
+(continuing)
+MIDI, or the Musical Instrument Digital Interface, was first introduced in the early 1980s. It's a protocol that allows electronic musical instruments and computers to communicate with each other.
+
+Professor Giordi stands at the front of the classroom, ready to delve into the core components of MIDI. The students are eager to learn more.
+
+PROFESSOR GIORDI
+(excitedly)
+Alright, everyone! Let's dive into the heart of MIDI. Today, we'll discuss MIDI messages, MIDI channels, and MIDI controllers. These are the building blocks for understanding and designing MIDI devices.
+
+Giordi switches on the projector and starts a presentation to visually explain the concepts.
+
+PROFESSOR GIORDI
+(continuing)
+First up, MIDI messages. These are the digital signals that MIDI devices use to communicate with each other. There are three main types of MIDI messages: Channel Voice, System Common, and System Real-Time.
+
+Giordi elaborates on each type of message:
+
+Channel Voice Messages: These convey performance data such as note on/off, pitch bend, and aftertouch.
+System Common Messages: These include song position, song select, and tune request, which are related to the overall operation of the MIDI system.
+System Real-Time Messages: These control the timing and synchronization of the devices, such as MIDI clock, start, stop, and continue.
+PROFESSOR GIORDI
+(continuing)
+Now, let's move on to MIDI channels. A MIDI channel is a virtual path through which MIDI messages are transmitted. There are 16 MIDI channels available, numbered 1 through 16. Each MIDI device can be set to receive and/or transmit on one or more channels.
+
+Giordi explains how MIDI channels allow for multiple devices to communicate without interference and demonstrates channel assignment on a MIDI device.
+
+PROFESSOR GIORDI
+(continuing)
+Finally, let's discuss MIDI controllers. These are devices that generate MIDI messages to control various aspects of a performance or sound. Examples include keyboards, drum pads, and wind controllers.
+
+Giordi demonstrates the use of different MIDI controllers and explains how they generate specific types of MIDI messages.
+
+PROFESSOR GIORDI
+(continuing)
+MIDI controllers can also send Continuous Controller messages, which can be used to manipulate parameters such as volume, pan, or modulation in real-time. There are 128 possible Continuous Controller messages, each assigned to a specific function.
+
+Giordi wraps up the explanation with a summary:
+
+PROFESSOR GIORDI
+(continuing)
+So, to recap: MIDI messages are the digital signals used for communication, MIDI channels are the virtual paths for these messages, and MIDI controllers generate these messages to manipulate various aspects of a performance or sound. Understanding these core components is essential for designing and working with MIDI devices.
+
+The students nod, their understanding of the MIDI fundamentals deepened by Professor Giordi's thorough explanation.
+
+PROFESSOR GIORDI
+(continuing)
+Understanding these fundamentals is crucial for designing effective MIDI devices. Throughout this course, we'll dive deeper into these concepts and apply them to real-world projects.
+
+The class listens attentively, their interest piqued by the rich history and potential applications of MIDI.
+
+PROFESSOR GIORDI
+(continuing)
+For our next class, I want you to research a MIDI device that interests you and come prepared to discuss how it uses MIDI messages, channels, and controllers. Don't forget to bring your curiosity and passion!
+
+The bell rings, signaling the end of the lecture. The students gather their things and exit, chatting enthusiastically about the course and their newfound appreciation for MIDI technology.
+
+Professor Giordi gathers his belongings, a smile on his face as he watches his students leave, energized by their excitement.
+
+FADE OUT.

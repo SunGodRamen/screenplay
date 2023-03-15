@@ -1,0 +1,167 @@
+Title: Lecture 2
+Credit: Taught by Professor Mikael Giordi
+Draft: 1
+
+.INT. STANFORD CLASSROOM - DAY
+
+The classroom is buzzing with excitement as the students prepare to present their first assignment. Professor Giordi stands at the front of the room, ready to listen to their submissions.
+
+Clyde's Submission
+Clyde steps up to the front of the classroom, holding a MIDI drum pad controller.
+
+CLYDE
+For my assignment, I chose the Akai MPD218 MIDI drum pad controller. It uses MIDI messages to trigger drum samples on a computer or other connected devices. By sending note on/off messages and velocity information through a MIDI channel, the controller can create dynamic and expressive drum performances.
+
+Noah's Submission
+Noah takes the floor, presenting a MIDI wind controller.
+
+NOAH
+I researched the Yamaha WX5 MIDI wind controller. It emulates the playing style of a traditional wind instrument, like a saxophone. The controller sends MIDI messages, such as note on/off, pitch bend, and aftertouch, to control synthesizers or virtual instruments on a computer. It can be used on any MIDI channel, allowing for versatile performance setups.
+
+Raj's Submission
+Raj stands up and shows off a MIDI guitar controller.
+
+RAJ
+I looked into the You Rock Guitar YRG-1000 MIDI guitar controller. This device allows guitarists to access the world of MIDI. The controller sends MIDI messages, like note on/off and pitch bend, and can be assigned to different MIDI channels. It can be used to control various synthesizers and virtual instruments, opening up a new range of sounds for guitar players.
+
+Kate's Submission
+Kate presents her research on a MIDI keyboard controller.
+
+KATE
+My assignment focused on the Novation Launchkey 49 MIDI keyboard controller. It sends MIDI messages such as note on/off, velocity, and continuous controller data for parameters like modulation and sustain. It can also send MIDI messages on different channels, allowing for control of multiple virtual instruments simultaneously.
+
+Lee's Submission
+Lee steps forward, showcasing a MIDI sequencer.
+
+LEE
+I chose the Elektron Octatrack MIDI sequencer for my assignment. It's capable of sending various MIDI messages, including note on/off, continuous controller data, and program changes. It can send messages across multiple MIDI channels, enabling complex arrangements and control of multiple devices in a live or studio setting.
+
+Kanjo's Submission
+Finally, Kanjo presents his findings on a MIDI foot controller.
+
+KANJO
+I researched the Behringer FCB1010 MIDI foot controller. It's designed for guitarists and other musicians who need hands-free control of their gear. The controller sends MIDI messages, such as program change and continuous controller data, to control effects processors, synthesizers, and other MIDI-enabled devices. It can also send messages on different MIDI channels, allowing for versatile control setups.
+
+The class applauds each submission, and Professor Giordi beams with pride as he sees the engagement and creativity in his students' work.
+
+Professor Giordi stands at the front of the classroom, ready to begin his second lecture. The students have settled in, eager to expand their knowledge of MIDI.
+
+PROFESSOR GIORDI
+(cheerfully)
+Welcome back, everyone! Today, we'll explore the inner workings of MIDI communication. We'll discuss MIDI data, including the binary structure of MIDI messages, and learn about MIDI ports and connections. Let's get started!
+
+Giordi switches on the projector and starts a presentation to visually explain the concepts.
+
+PROFESSOR GIORDI
+(continuing)
+MIDI messages are transmitted as digital data, consisting of a series of 1s and 0s. Each MIDI message is composed of a status byte, followed by one or two data bytes, depending on the message type.
+
+Giordi elaborates on the structure of MIDI messages:
+
+PROFESSOR GIORDI
+(enthused)
+Now that we have a general understanding of MIDI messages, let's dive deeper into their structure. MIDI messages are composed of a status byte and one or two data bytes, depending on the message type.
+
+Giordi switches on the projector and displays a visual representation of a MIDI message structure.
+
+PROFESSOR GIORDI
+(continuing)
+The status byte is the first part of a MIDI message. It serves two main purposes: to indicate the type of message being sent and to specify the MIDI channel the message is transmitted on.
+
+Giordi explains the structure of the status byte:
+
+The first four bits indicate the message type (e.g., note on or note off).
+The last four bits represent the MIDI channel (1-16) on which the message is transmitted.
+PROFESSOR GIORDI
+(continuing)
+For example, a status byte of 1001 0011 in binary indicates a "note on" message being sent on MIDI channel 4.
+
+Giordi moves on to explain the data bytes.
+
+PROFESSOR GIORDI
+(continuing)
+Following the status byte, one or two data bytes contain information specific to the message type. Data bytes always begin with a 0, which differentiates them from status bytes.
+
+Giordi gives examples of the information contained in data bytes for different message types:
+
+Note on/off: The first data byte represents the pitch (0-127), and the second data byte represents the velocity (0-127).
+Continuous controller: The first data byte indicates the controller number (0-127), and the second data byte represents the controller value (0-127).
+Pitch bend: The first data byte contains the least significant bits (LSB) of the pitch bend value, while the second data byte contains the most significant bits (MSB).
+PROFESSOR GIORDI
+(continuing)
+By understanding the structure of status and data bytes, we can create, interpret, and manipulate MIDI messages effectively in our MIDI devices and applications.
+
+The students nod, their understanding of the MIDI message structure deepened by Professor Giordi's thorough explanation.
+
+Giordi transitions to discussing MIDI ports and connections.
+
+PROFESSOR GIORDI
+(enthused)
+Let's take a closer look at the 5-pin DIN connectors used for MIDI IN, MIDI OUT, and MIDI THRU ports. These ports are essential for MIDI communication between devices.
+
+Giordi switches on the projector and displays a diagram of the 5-pin DIN connectors, highlighting each port's function.
+
+PROFESSOR GIORDI
+(continuing)
+First, let's talk about the MIDI IN port. This port is designed to receive incoming MIDI messages from other devices. When a device, such as a MIDI controller, sends a message, it's transmitted through the MIDI OUT port and then received by the MIDI IN port of the connected device, like a synthesizer or a computer.
+
+Giordi further explains that the MIDI IN port is crucial for devices to interpret and respond to incoming MIDI messages. Devices will typically process these messages to generate sound, trigger events, or control parameters.
+
+PROFESSOR GIORDI
+(continuing)
+Next, we have the MIDI OUT port. This port sends MIDI messages to other devices. When you play a note on a MIDI controller, for example, the controller generates a MIDI message that is transmitted through the MIDI OUT port to the connected device's MIDI IN port.
+
+Giordi emphasizes that the MIDI OUT port is vital for initiating communication between MIDI devices and allowing them to interact with one another.
+
+PROFESSOR GIORDI
+(continuing)
+Lastly, let's discuss the MIDI THRU port. This port passes incoming MIDI messages to other devices without processing them. When a device receives a MIDI message through its MIDI IN port, the MIDI THRU port can send an exact copy of that message to another device's MIDI IN port, creating a chain of connected devices.
+
+Giordi elaborates on the importance of the MIDI THRU port for connecting multiple devices in a MIDI setup, such as when controlling multiple synthesizers with a single MIDI controller. This port maintains message integrity and ensures that all connected devices receive the same information.
+
+PROFESSOR GIORDI
+(continuing)
+Understanding the functions of MIDI IN, MIDI OUT, and MIDI THRU ports, and the 5-pin DIN connectors, is critical for designing MIDI systems and effectively routing MIDI messages between devices.
+
+The students nod, their understanding of MIDI ports and connections deepened by Professor Giordi's thorough explanation.
+
+Giordi concludes the lecture by summarizing the key points:
+
+PROFESSOR GIORDI
+(continuing)
+In summary, understanding the binary structure of MIDI messages and the various ports and connections is crucial when working with MIDI devices. As we move forward in this course, we'll apply this knowledge to design and develop our own MIDI devices and applications.
+
+The students nod, their understanding of MIDI communication deepened by Professor Giordi's thorough explanation.
+
+Professor Giordi stands at the front of the classroom, ready to give the students their suggested assignment for the week. The students eagerly await their task, excited to delve deeper into the world of MIDI.
+
+PROFESSOR GIORDI
+(smiling)
+Alright, everyone! I have an exciting assignment for you this week. We've learned about MIDI messages, channels, controllers, and ports. Now, it's time to put that knowledge into practice.
+
+Giordi presents the assignment on the projector screen:
+
+ASSIGNMENT:
+Design a simple MIDI device that utilizes the concepts we've discussed so far. Your device can be a MIDI controller, sequencer, or any other creative application of MIDI technology.
+
+REQUIREMENTS:
+
+Your device must send and/or receive MIDI messages.
+It should use at least one MIDI channel.
+Incorporate MIDI IN, MIDI OUT, or MIDI THRU ports in your design, as applicable.
+Provide a brief written description of your device, explaining its purpose, functionality, and the MIDI concepts it employs.
+Giordi elaborates on the assignment:
+
+PROFESSOR GIORDI
+(continuing)
+This assignment is a chance for you to explore MIDI technology more intimately and start thinking like an embedded device engineer in the context of MIDI. The goal is to get hands-on experience with designing MIDI devices and applying the concepts we've learned in class. Feel free to collaborate with your classmates, and don't hesitate to reach out if you need help or guidance.
+
+The students nod, excited about the challenge ahead.
+
+PROFESSOR GIORDI
+(continuing)
+You'll have one week to complete this assignment. Next class, we'll have a chance to present and discuss your designs. I'm looking forward to seeing your creativity in action!
+
+The students leave the classroom, buzzing with ideas and eager to begin their MIDI device projects.
+
+FADE OUT.

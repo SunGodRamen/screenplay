@@ -1,0 +1,120 @@
+FADE IN:
+
+.INT. STANFORD CLASSROOM - DAY
+
+The students file into the classroom for the fourth lecture, each carrying their MIDI devices, except for one. They've spent the week working on their assignments, focusing on either MIDI clock synchronization or SysEx messages. Professor Giordi, excited to see their progress, starts the class.
+
+PROFESSOR GIORDI
+(beaming)
+Welcome back, everyone! I'm eager to see the results of your hard work. Today, we'll start with your presentations. Who'd like to go first?
+
+Clyde, one of the students, raises his hand and walks to the front of the class. He looks nervous but determined.
+
+CLYDE
+(uncertain)
+I worked on a MIDI sequencer that syncs with an external MIDI clock. I had some trouble with the synchronization, but after a few iterations, I managed to get it working smoothly.
+
+Clyde demonstrates his sequencer, which successfully syncs with an external MIDI clock source. The class applauds, and Professor Giordi gives some positive feedback.
+
+PROFESSOR GIORDI
+(smiling)
+Great work, Clyde! It's impressive to see your improvement in such a short time. Keep it up!
+
+Next, Kate presents her MIDI device that sends custom SysEx messages to control a specific parameter on another device. She explains the challenges she faced during development and demonstrates the successful implementation of the SysEx messages. Professor Giordi praises her efforts and encourages her to continue exploring SysEx functionality.
+
+As the presentations continue, it becomes clear that one student, Lee, has not brought a MIDI device. When asked about his assignment, Lee hesitates before speaking.
+
+LEE
+(ashamed)
+I didn't manage to complete my assignment this week. I struggled with the SysEx implementation and couldn't get it working in time.
+
+Professor Giordi, though disappointed, offers a supportive response.
+
+PROFESSOR GIORDI
+(understanding)
+I appreciate your honesty, Lee. Don't worry, we all face challenges. Use this as an opportunity to learn and grow. I encourage you to seek help during my office hours, and let's make sure you succeed in the next assignment.
+
+Finally, Raj and Noah present their projects. They have each developed their own unique assignments, combining both MIDI clock synchronization and SysEx messages. Raj has created a drum machine that syncs with an external clock and allows for custom drum sample uploads via SysEx messages. Noah has developed a MIDI effects processor that synchronizes its tempo-based effects to an external clock and can receive SysEx messages to update effect parameters.
+
+Professor Giordi is thrilled to see students going above and beyond the assignment requirements and praises their creativity and dedication.
+
+PROFESSOR GIORDI
+(excited)
+Raj and Noah, you've both done an outstanding job! It's incredible to see you not only apply the concepts we've discussed but also innovate and combine them in new ways. Keep up the fantastic work!
+With the students' presentations finished, Professor Giordi moves on to the next topic of the course. He is excited to teach the students about MIDI software and the possibilities it offers for their projects.
+
+PROFESSOR GIORDI
+(beaming)
+Now that we've covered MIDI hardware and communication extensively, let's delve into MIDI software. Today, we'll explore different types of MIDI software, their applications, and how you can use them to enhance your MIDI devices and projects.
+
+Giordi switches on the projector and starts displaying slides about various MIDI software types.
+
+PROFESSOR GIORDI
+(continuing)
+First, let's talk about Digital Audio Workstations, or DAWs. These are comprehensive software applications that allow you to record, edit, and mix both MIDI and audio data. Popular DAWs include Ableton Live, FL Studio, and Logic Pro. DAWs provide a convenient platform for working with MIDI data and interfacing with your MIDI devices.
+
+Next, Giordi introduces the students to software synthesizers and samplers.
+
+PROFESSOR GIORDI
+(continuing)
+Software synthesizers and samplers allow you to generate and manipulate sounds using your computer, without the need for dedicated hardware. These instruments can be controlled using MIDI data from your devices and integrated into your DAW for further editing and processing.
+
+Giordi then discusses MIDI sequencers and arpeggiators in the software realm.
+
+PROFESSOR GIORDI
+(continuing)
+There are also standalone software MIDI sequencers and arpeggiators that can be used to create patterns, sequences, and arpeggios. These applications can receive MIDI data from your devices and send it back to control other devices, offering a new level of flexibility and creativity in your projects.
+
+Finally, Giordi talks about MIDI utility software.
+
+PROFESSOR GIORDI
+(continuing)
+MIDI utility software offers various tools for working with MIDI data, such as MIDI monitors, which display incoming and outgoing MIDI messages, and MIDI mappers, which can be used to remap MIDI data to different controllers or channels. These utilities can be invaluable when troubleshooting or customizing your MIDI devices and projects.
+
+Professor Giordi concludes the lecture by emphasizing the importance of understanding MIDI software as an integral part of the MIDI ecosystem.
+
+PROFESSOR GIORDI
+(continuing)
+Becoming proficient in MIDI software will enable you to create more complex and versatile MIDI projects, opening up new possibilities for your devices and performances. In our next lecture, we'll dive deeper into working with specific MIDI software tools, so you can apply these concepts to your own work.
+
+The students, excited about the potential of MIDI software, are eager to learn more and experiment with these new tools in their projects.
+
+After demonstrating his MIDI software development environment, Professor Giordi's eyes sparkle with mischief. He pauses for a moment before giving the class an evil grin.
+
+PROFESSOR GIORDI
+(grinning)
+Now, for some things you won't get taught in college...
+
+The students exchange curious glances, intrigued by Giordi's sudden change in tone.
+
+PROFESSOR GIORDI
+(continuing)
+Throughout my years working in the industry, I've picked up a few tricks and techniques that you won't find in textbooks or traditional courses. Today, I'll share some of these with you. But remember, use this knowledge wisely and responsibly.
+
+Giordi proceeds to discuss some unconventional MIDI practices he learned during his time in the industry.
+
+PROFESSOR GIORDI
+(continuing)
+First, let's talk about MIDI feedback loops. While these are typically considered undesirable, you can actually use them creatively to generate interesting textures and patterns. By carefully controlling the feedback loop, you can coax unexpected and evolving sounds from your MIDI devices.
+
+Giordi then talks about MIDI hacks and workarounds that he has encountered in the industry.
+
+PROFESSOR GIORDI
+(continuing)
+In the world of MIDI, sometimes you'll encounter situations where you need to "bend the rules" to achieve a desired result. One example is the use of "dummy clips" in Ableton Live. By creating an empty MIDI or audio clip with automation data, you can control parameters on other tracks or devices without having to trigger any actual notes or audio.
+
+Next, Giordi shares an unusual but effective technique for live performances.
+
+PROFESSOR GIORDI
+(continuing)
+When performing live, you may sometimes need to change the settings of multiple MIDI devices simultaneously. To achieve this, you can use a MIDI controller with multiple knobs or sliders assigned to various parameters on different devices. By manipulating these controls, you can create complex, synchronized changes in real-time, adding a new level of depth and interaction to your performances.
+
+Finally, Giordi shares a secret weapon he often uses for sound design and experimentation.
+
+PROFESSOR GIORDI
+(continuing)
+For sound design, I often use a technique called "MIDI mangling." This involves taking a MIDI clip and deliberately altering, corrupting, or otherwise manipulating its data to produce unpredictable and unique results. This can lead to the discovery of new sounds and textures that you might never have stumbled upon otherwise.
+
+The students, amazed by Giordi's unconventional techniques, listen with rapt attention, eager to try these secret practices in their own MIDI projects.
+
+FADE OUT.
