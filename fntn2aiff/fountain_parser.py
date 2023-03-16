@@ -1,8 +1,10 @@
-import sys
+import os
 import re
-import pyttsx3
+from gtts import gTTS
+from pydub import AudioSegment
 
 def parse_fountain_file(file_path):
+    print(f"Processing Fountain file: {file_path}")
     with open(file_path, 'r') as file:
         content = file.readlines()
 
@@ -23,31 +25,77 @@ def parse_fountain_file(file_path):
             if dialogue_character_match:
                 characters.add(dialogue_character_match.group(1))
 
+    print(f"Characters found: {characters}")
     return list(characters)
 
-def convert_to_mp3(input_file, output_file, characters):
-    # Initialize TTS engine
-    engine = pyttsx3.init()
+def convert_line_to_mp3(line, voice_id, engine):
+    with tempfile.NamedTemporaryFile(delete=False) as fp:
+        temp_filename = fp.name
 
-    # Load Fountain file content
-    with open(input_file, 'r') as file:
-        content = file.read()
-
-    # Extract dialogues
-    dialogues = re.findall(r'^[A-Z\s\-\.]+$\n^(\S+.*$)', content, re.MULTILINE)
-
-    # Convert dialogues to speech and save as MP3
-    for dialogue in dialogues:
-        engine.save_to_file(dialogue, output_file)
+    engine.setProperty('voice', voice_id)
+    engine.save_to_file(line, temp_filename)
     engine.runAndWait()
 
+    return temp_filename
 
-if __name__ == '__main__':
-    if len(sys.argv) < 3:
-        print('Usage: python fountain_parser.py <fountain_file_path> <output_mp3_path>')
-        sys.exit(1)
+def generate_audio_files(characters, file_path):
+    print(f"Generating audio files for characters: {characters}")
 
-    fountain_file_path = sys.argv[1]
-    output_mp3_path = sys.argv[2]
-    characters = parse_fountain_file(fountain_file_path)
-    convert_to_mp3(fountain_file_path, output_mp3_path, characters)
+    with open(file_path, 'r') as file:
+        content = file.readlines()
+
+    audio_files = []
+
+    for index, line in enumerate(content):
+        is_dialogue = False
+        character = ""
+
+        # Check if the line is a character name
+        if line.strip() in characters:
+            character = line.strip()
+            is_dialogue = True
+
+        # Check if the line is dialogue
+        elif index > 0 and content[index - 1].strip() in characters:
+            character = content[index - 1].strip()
+            is_dialogue = True
+
+        if is_dialogue:
+            tts = gTTS(text=line.strip(), lang='en')
+            output_file = f"audio/{character}-{index}.mp3"
+            tts.save(output_file)
+            audio_files.append(output_file)
+
+    print(f"Generated audio files: {audio_files}")
+    return audio_files
+
+def concatenate_audio(audio_files, output_file):
+    print(f"Concatenating audio files: {audio_files}")
+
+    concatenated_audio = AudioSegment.empty()
+
+    for audio_file in audio_files:
+        segment = AudioSegment.from_file(audio_file, format="mp3")  # Change format to "mp3"
+        concatenated_audio += segment
+
+    concatenated_audio.export(output_file, format="mp3")
+
+def main():
+    input_dir = os.environ.get('INPUT_DIR', 'input')
+    output_dir = os.environ.get('OUTPUT_DIR', 'output')
+
+    file_path = os.path.join(input_dir, 'sample_fountain_script.fountain')
+    output_file = os.path.join(output_dir, 'output.mp3')
+
+    # Create the audio directory if it doesn't exist
+    os.makedirs('audio', exist_ok=True)
+
+    print("Starting Fountain file processing...")
+    characters = parse_fountain_file(file_path)
+    audio_files = generate_audio_files(characters, file_path)
+    concatenate_audio(audio_files, output_file)
+    print("Fountain file processing complete.")
+
+if __name__ == "__main__":
+    main()
+
