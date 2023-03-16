@@ -1,2 +1,1 @@
-pydub
-gtts
+pyttsx3==2.90
