@@ -1,0 +1,132 @@
+
+Title: Lecture 10
+Credit: Taught by Professor Mikael Giordi
+Draft: 1
+
+FADE IN:
+
+.INT. STANFORD CLASSROOM - DAY
+
+The students have gathered for Lecture 10, excited to share their projects that integrate MIDI with either OSC or DMX. Professor Giordi is eager to see the results of their work.
+
+PROFESSOR GIORDI
+(beaming)
+Alright, everyone, let's get started with today's presentations. I can't wait to see how you've integrated MIDI with OSC or DMX in your projects.
+
+Clyde is the first to present. He has created a live performance setup using MIDI and OSC to control a synthesizer and a visual projection system.
+
+CLYDE
+(excited)
+In my project, I used MIDI to control a synthesizer, while OSC messages were sent simultaneously to control a visual projection system. The result is an immersive audio-visual experience that responds to my performance in real-time.
+
+Next, Noah presents his project, which uses MIDI and DMX to create a synchronized lighting show for a live electronic music performance.
+
+NOAH
+(enthusiastic)
+I used MIDI to trigger lighting changes in sync with my electronic music performance. By mapping MIDI messages to DMX channels, I was able to control various lighting elements and create a dynamic, visually engaging show.
+
+Raj presents an installation that combines MIDI-controlled soundscapes with DMX-controlled LED lights.
+
+RAJ
+(interested)
+My project is an interactive installation where visitors can use a MIDI controller to manipulate soundscapes, while their actions also control the LED lights around the room. The result is a captivating, immersive experience that encourages exploration.
+
+Kate, Lee, and Kanjo also present their projects, showcasing various ways of integrating MIDI with OSC or DMX to create engaging multimedia experiences. Each student has taken a unique approach, and their projects demonstrate the versatility and potential of combining MIDI with other technologies.
+
+PROFESSOR GIORDI
+(impressed)
+I am amazed by the creativity and technical prowess you've all shown in your projects. It's exciting to see how MIDI, OSC, and DMX can be combined to create such diverse and engaging experiences. Well done, everyone!
+
+The students are proud of their accomplishments and inspired by the work of their classmates. They're eager to continue exploring the potential of MIDI and other technologies in their future projects.
+
+PROFESSOR GIORDI
+(smiling)
+Now that we've seen some fantastic examples of integrating MIDI with OSC and DMX, let's dive deeper into the world of interactive music systems.
+
+Today, we'll be discussing the use of sensors, microcontrollers, and MIDI to create interactive music installations and instruments. We'll explore different types of sensors, how they can be used to gather data, and how to convert that data into meaningful MIDI messages.
+
+First, Giordi introduces the students to various types of sensors, such as distance, pressure, and touch sensors. He explains how these sensors can be used to detect user interactions or environmental changes.
+
+PROFESSOR GIORDI
+(interested)
+Sensors can be used to gather data about the physical world, such as distance, pressure, or touch. By connecting sensors to a microcontroller, we can process this data and use it to generate MIDI messages, effectively creating interactive music systems.
+
+Next, Giordi explains how microcontrollers, such as Arduino or Raspberry Pi, can be used to read sensor data and generate MIDI messages.
+
+PROFESSOR GIORDI
+(enthusiastic)
+Microcontrollers like Arduino or Raspberry Pi can read data from sensors and convert it into MIDI messages. This allows us to create custom MIDI controllers or interactive installations that respond to user input or environmental changes.
+
+PROFESSOR GIORDI
+(enthusiastic)
+Today, I'll be showing you how to build a simple MIDI theremin using a Raspberry Pi and some readily available parts. A theremin is a touchless instrument that uses the player's hand movements to control the pitch and volume of the sound produced. We'll be using an ultrasonic distance sensor to detect hand movements and a Raspberry Pi to convert the sensor data into MIDI messages.
+
+Giordi proceeds to lay out the components needed for the project:
+
+PROFESSOR GIORDI
+(instructional)
+Raspberry Pi, any model with GPIO pins
+Ultrasonic distance sensor; such as HC-SR04
+Breadboard and jumper wires
+USB MIDI interface or USB to MIDI cable
+Synthesizer or DAW to receive MIDI messages
+
+PROFESSOR GIORDI
+(step-by-step)
+First, connect the ultrasonic distance sensor to the Raspberry Pi using the breadboard and jumper wires. Connect the sensor's VCC pin to the Raspberry Pi's 5V pin, the GND pin to a GND pin, and the sensor's trigger and echo pins to GPIO pins on the Raspberry Pi. In this example, I'll use GPIO 23 for the trigger pin and GPIO 24 for the echo pin.
+
+Giordi connects the sensor and Raspberry Pi as described, then proceeds to explain the software side of the project.
+
+PROFESSOR GIORDI
+(engaging)
+Now, we need to set up the software on the Raspberry Pi. We'll be using Python to read the sensor data and convert it into MIDI messages. First, make sure you have Python and the necessary libraries installed on your Raspberry Pi. We'll need the RPi.GPIO library for reading the sensor data and the python-rtmidi library for sending MIDI messages.
+
+Giordi proceeds to demonstrate how to install the libraries using the terminal on the Raspberry Pi.
+
+PROFESSOR GIORDI
+(instructional)
+With the libraries installed, we can now write a Python script that reads the distance data from the sensor and converts it into MIDI messages. We'll map the distance data to MIDI note values, so as you move your hand closer or further away from the sensor, the pitch will change accordingly.
+
+Giordi writes a Python script that initializes the GPIO pins, sets up the MIDI output, and reads the distance data from the sensor. He maps the distance values to MIDI note numbers and sends the corresponding note on and note off messages.
+
+PROFESSOR GIORDI
+(eager)
+Finally, connect the Raspberry Pi to a synthesizer or DAW using a USB MIDI interface or a USB to MIDI cable. Once connected, the Python script running on the Raspberry Pi will send MIDI messages to the synthesizer or DAW, allowing you to play notes by moving your hand closer or further away from the ultrasonic distance sensor.
+
+Giordi connects the Raspberry Pi to a synthesizer and starts the Python script. He demonstrates the MIDI theremin by moving his hand over the distance sensor, and the synthesizer plays notes accordingly, changing pitch as his hand moves.
+
+PROFESSOR GIORDI
+(excited)
+There you have it! A simple MIDI theremin using a Raspberry Pi and an ultrasonic distance sensor. You can expand upon this project by adding more sensors or integrating other input methods to create a more complex and expressive instrument.
+
+PROFESSOR GIORDI
+(inspired)
+By connecting sensors to microcontrollers and generating MIDI messages, we can create unique, engaging musical experiences that push the boundaries of traditional music-making.
+
+With the end of the semester approaching, Professor Giordi is ready to assign the final project for the course.
+
+PROFESSOR GIORDI
+(enthusiastic)
+Alright, everyone, it's time for your final project. Your task is to create an innovative and functional MIDI device or system using the concepts and techniques we've learned throughout this course. I want you to push the boundaries of what's possible with MIDI, and most importantly, have fun with it!
+
+The students listen attentively as Giordi explains the schedule for the final weeks of the course.
+
+PROFESSOR GIORDI
+(organizing)
+Next week, we won't have a formal lecture. Instead, we'll be holding office hours in the form of a hackathon. Everyone is encouraged to come and work on their final projects together, collaborate, and help each other out. I'll be available to answer any questions and provide guidance as needed.
+
+PROFESSOR GIORDI
+(continuing)
+In two weeks, we'll reconvene for the final presentations. Each of you will have the opportunity to present your projects to the class, showcasing your creativity and the skills you've acquired throughout the semester.
+
+PROFESSOR GIORDI
+(continuing)
+The students are excited about the final project and the upcoming hackathon, already buzzing with ideas and discussing potential collaborations.
+
+PROFESSOR GIORDI
+(encouraging)
+Remember, the goal of this final project is to explore new ideas, push the limits, and demonstrate your understanding of MIDI and its applications. I can't wait to see what you all come up with!
+
+With the final project assigned and the schedule laid out, the students leave the classroom, eager to begin working on their innovative MIDI creations.
+
+FADE OUT.

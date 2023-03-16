@@ -1,0 +1,92 @@
+FADE IN:
+
+.INT. STANFORD CLASSROOM - DAY
+
+As the students gather in the classroom for Lecture 9, they eagerly prepare to present their MPE-enabled projects. The atmosphere is charged with excitement as they set up their hardware and software demonstrations.
+
+PROFESSOR GIORDI
+(smiling)
+Alright, everyone. I'm looking forward to seeing the innovative and expressive projects you've created using MPE. Let's start with Clyde. Please come up and present your project.
+
+Clyde steps forward and presents his MPE project – a custom-built controller with touch-sensitive pads that allow for expressive control over pitch, timbre, and amplitude. He demonstrates the device by playing a short, emotive piece, showcasing the nuances achievable with MPE.
+
+PROFESSOR GIORDI
+(enthused)
+Excellent work, Clyde! Your controller has a unique design, and I can see how MPE enhances the expressiveness of your performance.
+
+Next up is Noah. Noah unveils his software synthesizer, which utilizes MPE to create organic and evolving soundscapes. He plays a short composition that demonstrates the intricate control he has over each individual note, captivating the class.
+
+PROFESSOR GIORDI
+(impressed)
+Great job, Noah! Your synthesizer really showcases the potential of MPE in creating dynamic and expressive sounds.
+
+The presentations continue with each student showcasing their MPE-enabled projects, including Raj's MPE-compatible effects processor, Kate's expressive MIDI guitar, Lee's innovative gestural MPE controller, and Kanjo's MPE-driven interactive installation.
+
+PROFESSOR GIORDI
+(beaming)
+I am truly impressed by the creativity and innovation you've all shown in your MPE projects. It's fantastic to see you embracing this technology and pushing its expressive potential. Now, let's move on with today's lecture.
+
+PROFESSOR GIORDI
+(continuing)
+Today, we're going to explore how MIDI can be used in live performance settings. We'll cover topics such as MIDI controllers, live looping, and MIDI routing for complex live setups.
+
+Giordi starts with an overview of popular MIDI controllers used in live performance, including keyboard controllers, drum pads, wind controllers, and gestural devices.
+
+PROFESSOR GIORDI
+(enthusiastic)
+MIDI controllers come in various shapes and sizes, each offering unique ways to interact with sound. In live performance, these controllers can be used to play instruments, trigger samples, or manipulate effects in real-time.
+
+Giordi then introduces the concept of live looping, explaining how MIDI can be used to record, layer, and manipulate loops on-the-fly.
+
+PROFESSOR GIORDI
+(excited)
+Live looping is a powerful technique that allows performers to build up layers of sound, creating intricate arrangements in real-time. By using MIDI controllers to trigger and manipulate loops, performers can create engaging and dynamic performances.
+
+Finally, Giordi discusses MIDI routing in live performance setups, explaining how performers can use MIDI to control multiple devices, automate effects, and synchronize equipment.
+
+PROFESSOR GIORDI
+(interested)
+In complex live setups, MIDI routing is essential for managing the flow of data between devices. Performers can use MIDI to control multiple instruments, automate effects changes, or synchronize tempo across devices, ensuring a cohesive and seamless performance.
+PROFESSOR GIORDI
+(smiling)
+Now that we've explored how MIDI can be used in live performance settings, let's move on to our second topic for today: integrating MIDI with other technologies and protocols, such as Open Sound Control (OSC) and DMX.
+
+First, Giordi introduces the students to Open Sound Control, a more modern communication protocol that can be used alongside MIDI for additional flexibility and control.
+
+PROFESSOR GIORDI
+(interested)
+Open Sound Control, or OSC, is a flexible communication protocol designed for networking computers, sound synthesizers, and other multimedia devices. It provides high-resolution, low-latency communication that can be used in tandem with MIDI to create more complex and responsive systems.
+
+Giordi demonstrates an example of using OSC alongside MIDI to control a lighting system during a live performance. He shows the class how to set up an OSC-enabled device to receive MIDI messages and use them to trigger lighting changes in sync with the music.
+
+PROFESSOR GIORDI
+(enthusiastic)
+By combining MIDI and OSC, we can create powerful performance systems that not only control sound but also integrate visual elements such as lighting and video.
+
+Next, Giordi introduces the DMX protocol, commonly used in lighting and stage design.
+
+PROFESSOR GIORDI
+(informative)
+DMX, or Digital Multiplex, is a standard protocol for controlling stage lighting and effects. It can be used alongside MIDI to create synchronized audio-visual performances. For example, you can map MIDI messages to DMX channels, allowing your MIDI controller to trigger lighting changes or control fog machines.
+
+Giordi shows the students how to set up a MIDI-to-DMX interface and explains the process of mapping MIDI messages to DMX channels for controlling stage lighting.
+
+PROFESSOR GIORDI
+(inspired)
+By integrating MIDI with other technologies such as OSC and DMX, we can create immersive, multimedia experiences that push the boundaries of what's possible in live performance and installations.
+
+PROFESSOR GIORDI
+(smiling)
+This week, I want you to create a project that demonstrates the integration of MIDI with either OSC or DMX. You can choose to focus on live performance, installations, or any other context that interests you.
+
+PROFESSOR GIORDI
+(continuing)
+For those working with OSC, consider creating a system that communicates between multiple devices, such as computers, synthesizers, or lighting systems. Explore how OSC can complement MIDI to provide more flexible and responsive control.
+
+PROFESSOR GIORDI
+(continuing)
+For those working with DMX, think about how you can synchronize audio and visual elements using MIDI and DMX. Create a small-scale performance setup or an installation that integrates sound, lighting, and other stage effects.
+
+PROFESSOR GIORDI
+(continuing)
+To get started, you may want to research existing projects that combine MIDI with OSC or DMX, and experiment with different software and hardware solutions for interfacing between the two protocols. Remember to document your process and be prepared to present your project next week.

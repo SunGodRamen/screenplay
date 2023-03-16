@@ -1,0 +1,123 @@
+
+Title: Final Presentations
+Credit: Taught by Professor Mikael Giordi
+Draft: 1
+
+FADE IN:
+
+.INT. STANFORD CLASSROOM - DAY
+
+The final class has arrived, and the students are excited to present their completed projects. Clyde and Noah are the first to present, having collaborated on a unique and ambitious project.
+
+CLYDE
+(confident)
+Our project is called "GestuMIDI." It's a gesture-based MIDI controller system that uses computer vision and machine learning to translate human movements into MIDI data.
+
+NOAH
+(excited)
+We used OpenCV and TensorFlow to process the video feed from a camera, and trained a custom machine learning model to recognize specific gestures and map them to MIDI messages.
+
+CLYDE
+(acknowledging difficulties)
+One of the challenges we faced was getting the gesture recognition to be accurate and responsive enough for real-time music creation. We had to experiment with different algorithms and techniques to improve the performance.
+
+NOAH
+(adding)
+Another challenge we encountered was creating an intuitive and flexible interface for users to map their gestures to specific MIDI messages. We wanted to allow for customization while maintaining a simple and accessible user experience.
+
+CLYDE
+(demonstrating)
+Now, we'll show you a quick demo of how GestuMIDI works. As I move my hands, the system recognizes the gestures and translates them into MIDI messages, which are then sent to a software synthesizer to create sound.
+
+Clyde performs a series of gestures, and the room fills with the sounds of his musical creation. The class watches in awe, impressed by the seamless integration of technology and human expression.
+
+PROFESSOR GIORDI
+(beaming with pride)
+Excellent work, Clyde and Noah! You've overcome significant challenges to create a truly innovative and expressive MIDI controller. I'm impressed with your dedication and the creative application of computer vision and machine learning in your project.
+
+As the class applauds, Clyde and Noah feel a great sense of accomplishment. They have successfully combined their passion for music and technology to create a unique and inspiring project that pushes the boundaries of MIDI control.
+
+LEE
+(smiling)
+Hello everyone, my project is called "AcoustiMIDI." It's a system that captures the vibrations of acoustic instruments using piezo sensors and converts them into MIDI data for further manipulation and control.
+
+Lee holds up an acoustic guitar fitted with piezo sensors, showing the class her innovative design.
+
+LEE
+(continuing)
+To analyze the sensor data, I used a combination of frequency-domain analysis and machine learning algorithms. I also utilized existing pitch and onset detection libraries, as suggested by Professor Giordi.
+
+Lee demonstrates her project by playing the guitar. The class listens to the acoustic sound blending seamlessly with the digital MIDI components, creating a unique and captivating soundscape.
+
+LEE
+(acknowledging challenges)
+One of the main challenges I faced was achieving accurate pitch and amplitude detection in real-time. It required a lot of trial and error, as well as fine-tuning the algorithms to get the desired results.
+
+LEE
+(adding)
+Another difficulty was designing a non-intrusive and easy-to-install system for the piezo sensors, so they wouldn't interfere with the natural sound and playability of the instruments. I experimented with various attachment methods and materials to find the optimal solution.
+
+PROFESSOR GIORDI
+(impressed)
+Fantastic work, Lee! Your AcoustiMIDI project elegantly combines the beauty of acoustic instruments with the versatility of MIDI technology. You've demonstrated great problem-solving skills and creativity in tackling the challenges you faced. Well done!
+
+The class applauds Lee's innovative project, and she beams with pride, having successfully bridged the gap between traditional acoustic instruments and the digital world of MIDI.
+
+After Lee's presentation, Raj, Kate, and Kanjo are next to showcase their collaborative project. They've created an interactive MIDI installation that invites the audience to participate in music creation.
+
+RAJ
+(enthusiastic)
+Our project is called "MIDIscapes." It's an interactive MIDI installation that uses motion sensors, pressure-sensitive floor tiles, and a custom software system to allow users to create music through their movements and interactions with the environment.
+
+KATE
+(explaining)
+We used ultrasonic distance sensors to detect the movements of users and pressure-sensitive floor tiles to capture their footsteps. The data from these sensors is sent to a Raspberry Pi, which processes the information and generates MIDI messages.
+
+KANJO
+(adding details)
+We developed a custom software system using Python and MIDI libraries to create a versatile and flexible environment for mapping sensor inputs to various MIDI parameters, such as pitch, velocity, and effects.
+
+RAJ
+(demonstrating)
+As you walk on the pressure-sensitive tiles and move within the sensor range, the system generates different MIDI sounds and effects based on your actions.
+
+The class watches as Raj, Kate, and Kanjo demonstrate their project. The room fills with music as they move around the installation, creating an immersive and interactive experience.
+
+KATE
+(acknowledging challenges)
+One of the challenges we faced was calibrating and fine-tuning the sensors to achieve accurate and reliable data collection. We had to experiment with different configurations and filtering techniques to optimize the system's performance.
+
+KANJO
+(adding)
+Another difficulty was designing a user-friendly interface for customizing the MIDI mappings and settings. We wanted to make the system accessible and engaging for users of all ages and musical abilities.
+
+PROFESSOR GIORDI
+(impressed)
+Outstanding work, Raj, Kate, and Kanjo! Your MIDIscapes project truly captures the spirit of collaboration, creativity, and exploration that I hoped to inspire with this course. You've successfully integrated various technologies and tackled the challenges with determination and resourcefulness.
+
+With the final presentations over, Professor Giordi stands in front of the class, ready to give grades and say farewell.
+
+PROFESSOR GIORDI
+(sincerely)
+I am truly impressed by the dedication, creativity, and innovation each of you has shown throughout this course. It's been a pleasure to teach you all, and I'm proud of your accomplishments.
+
+Professor Giordi hands out the final grades to the students. They're pleased with their results, having learned a lot about MIDI and embedded devices throughout the course.
+
+PROFESSOR GIORDI
+(cheerful)
+I hope this experience has inspired you to continue exploring the world of music technology and MIDI. I wish you all the best in your future endeavors!
+
+Professor Giordi puts on a pair of sunglasses and grabs his electric guitar. With a sly grin, he strums a powerful chord, summoning a magical barline that lifts him off the ground.
+
+PROFESSOR GIORDI
+(shouting over the music)
+Farewell, everyone! Keep rocking the world of MIDI!
+
+The magical barline carries Professor Giordi out the window as he plays an epic guitar riff. The class watches in awe, waving goodbye to their eccentric and talented professor.
+
+The students begin to pack up their belongings and say their farewells to one another, reflecting on the unforgettable experience they've shared in Professor Giordi's class.
+
+FADE OUT.
+
+
+

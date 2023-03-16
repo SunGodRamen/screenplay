@@ -1,0 +1,116 @@
+
+Title: Lecture 8
+Credit: Taught by Professor Mikael Giordi
+Draft: 1
+
+FADE IN:
+
+.INT. STANFORD CLASSROOM - DAY
+
+PROFESSOR GIORDI
+(smiling)
+Welcome to Lecture 8, everyone! I'm looking forward to seeing the MIDI 2.0 projects you've been working on. Who would like to present first?
+
+Kate raises her hand, eager to share her project with the class.
+
+KATE
+(confident)
+I'll go first, Professor Giordi.
+
+Kate connects her laptop to the projector and starts her presentation.
+
+KATE
+(excited)
+For my project, I created a MIDI 2.0-enabled multi-touch controller with higher resolution and per-note control. This allows for more expressive performances, as each touchpoint can independently manipulate individual notes or parameters. I also implemented bidirectional communication to automatically configure the controller based on the connected MIDI devices.
+
+Next, Raj presents his project, a MIDI 2.0 software synthesizer that takes advantage of the new protocol's features.
+
+RAJ
+(enthusiastic)
+For my project, I developed a software synthesizer that supports MIDI 2.0. The synthesizer uses the higher resolution control for more precise parameter adjustments and per-note controllers for enhanced expressiveness. It also supports bidirectional communication, which streamlines the setup process and improves compatibility with various MIDI devices.
+
+One by one, the students present their MIDI 2.0 projects. They showcase a diverse range of devices and software applications that leverage the new protocol's features. As each student presents, their peers listen attentively and ask thoughtful questions, fostering a collaborative learning environment.
+
+Professor Giordi, impressed by the students' progress, provides constructive feedback and encouragement. He is proud to see their understanding of MIDI 2.0 and their ability to apply it in innovative ways.
+
+PROFESSOR GIORDI
+(smiling)
+Great job on your presentations, everyone! I'm really impressed with your MIDI 2.0 projects and how you've incorporated the new features into your designs. Now, let's continue with today's lecture.
+
+PROFESSOR GIORDI
+(continuing)
+Today, we'll explore MIDI Polyphonic Expression (MPE). MPE is an extension of the MIDI protocol that allows for more expressive performances by providing per-note control over pitch, timbre, and amplitude. With MPE, you can achieve a level of control similar to traditional acoustic instruments but within a digital environment.
+
+PROFESSOR GIORDI
+(continuing)
+MPE works by using multiple MIDI channels, typically one per note, to transmit the data for each individual note. This allows for independent control of pitch bend, pressure, and other continuous controllers on a per-note basis.
+
+PROFESSOR GIORDI
+(continuing)
+Here are some key aspects of MPE:
+
+PROFESSOR GIORDI
+(continuing)
+Channel Configuration: MPE devices typically use a dedicated channel for global controls, such as sustain and modulation, and separate channels for each individual note. This allows for independent control of per-note parameters while still maintaining global controls.
+
+PROFESSOR GIORDI
+(continuing)
+Per-Note Pitch Bend: With MPE, pitch bend messages can be applied to individual notes, allowing for expressive pitch control, such as vibrato and slides.
+
+PROFESSOR GIORDI
+(continuing)
+Per-Note Continuous Controllers: MPE devices can send continuous controller data, such as pressure and timbre, on a per-note basis. This enables more expressive control of individual notes within a performance.
+
+PROFESSOR GIORDI
+(continuing)
+Compatibility: MPE is designed to be compatible with both MIDI 1.0 and MIDI 2.0 devices. It can be implemented using standard MIDI messages, making it relatively easy to add MPE support to existing MIDI devices and software.
+
+PROFESSOR GIORDI
+(beaming)
+Now, let me show you some of my own projects that make use of MPE. This first one is an embedded device I developed – it's a custom MPE controller with pressure-sensitive pads and touch sliders. I use it to create more expressive performances by manipulating pitch, timbre, and pressure individually for each note.
+
+As he demonstrates his custom MPE controller, Giordi plays a few chords and melodies, showcasing how the device allows for nuanced control over each note.
+
+PROFESSOR GIORDI
+(enthusiastic)
+And here's a software synthesizer I've been working on that supports MPE. It allows for per-note control over various parameters, such as filter cutoff and resonance. By using MPE, I can create more organic and expressive sounds that are reminiscent of traditional acoustic instruments.
+
+As Professor Giordi plays his software synthesizer, the students can hear the expressive capabilities of MPE in action.
+
+PROFESSOR GIORDI
+(smiling)
+Many popular musicians have embraced MPE and incorporated it into their performances and compositions. For example, Imogen Heap uses MPE with her Mi.Mu gloves, which enable her to manipulate sounds through gestures. Her song "Me The Machine" is a fantastic example of MPE in action.
+
+PROFESSOR GIORDI
+(continuing)
+Another notable artist is Jordan Rudess, the keyboardist for Dream Theater. He has been an early adopter of MPE technology and uses it to create intricate and expressive solos. You can hear his MPE skills in songs like "The Dance of Eternity."
+
+After demonstrating the capabilities and real-world applications of MPE, Professor Giordi is ready to give the students their next assignment. He stands at the front of the classroom and addresses the class.
+
+PROFESSOR GIORDI
+(smiling)
+Alright, everyone. For this week's assignment, I'd like you to create your own MPE-enabled project. You can choose to work on either a hardware device or a software application that supports MPE. Your goal is to explore the expressive possibilities offered by MPE and demonstrate how it can enhance the musical experience.
+
+PROFESSOR GIORDI
+(continuing)
+Here are some suggestions to get you started:
+
+PROFESSOR GIORDI
+(continuing)
+Design an MPE controller with a unique user interface that allows for expressive control over pitch, timbre, and amplitude.
+
+PROFESSOR GIORDI
+(continuing)
+Develop a software synthesizer or sampler that takes advantage of MPE's per-note control to create organic and expressive sounds.
+
+PROFESSOR GIORDI
+(continuing)
+Create an MPE-compatible effects processor that can apply different effects to individual notes within a performance.
+
+PROFESSOR GIORDI
+(continuing)
+Remember, the key focus of this assignment is to explore and showcase the expressive capabilities of MPE. Be creative and don't be afraid to think outside the box!
+
+FADE OUT.
+
+
