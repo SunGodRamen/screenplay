@@ -1,6 +1,9 @@
 import os
 import re
 from gtts import gTTS
+from gtts import lang
+gTTS.GOOGLE_TTS_URL = 'https://translate.google.com/translate_tts'
+lang.tld = 'com'
 from pydub import AudioSegment
 
 def parse_fountain_file(file_path):
@@ -28,53 +31,70 @@ def parse_fountain_file(file_path):
     print(f"Characters found: {characters}")
     return list(characters)
 
-def convert_line_to_mp3(line, voice_id, engine):
-    with tempfile.NamedTemporaryFile(delete=False) as fp:
-        temp_filename = fp.name
-
-    engine.setProperty('voice', voice_id)
-    engine.save_to_file(line, temp_filename)
-    engine.runAndWait()
-
-    return temp_filename
-
-def generate_audio_files(characters, file_path):
+def generate_audio_files(characters, file_path, output_dir="audio"):
     print(f"Generating audio files for characters: {characters}")
 
-    with open(file_path, 'r') as file:
-        content = file.readlines()
+    voices_list = [
+        {"lang": "en", "accent": "com"},
+        {"lang": "en", "accent": "uk"},
+        {"lang": "en", "accent": "au"},
+        {"lang": "en", "accent": "ca"},
+        {"lang": "en", "accent": "za"},
+    ]  # List of 5 different voices
+    character_voices = {character: voice for character, voice in zip(characters, voices_list)}
+    narrator_voice = {"lang": "en", "accent": "uk"}  # Set the narrator's voice for stage directions
 
     audio_files = []
+    line_number = 1
+    stage_direction_mode = False
 
-    for index, line in enumerate(content):
-        is_dialogue = False
-        character = ""
+    with open(file_path, 'r') as file:
+        for line in file.readlines():
+            line = line.strip()
 
-        # Check if the line is a character name
-        if line.strip() in characters:
-            character = line.strip()
-            is_dialogue = True
+            if not line:  # Skip blank lines
+                stage_direction_mode = False
+                continue
 
-        # Check if the line is dialogue
-        elif index > 0 and content[index - 1].strip() in characters:
-            character = content[index - 1].strip()
-            is_dialogue = True
+            if line.startswith('>') and line.endswith('<'):
+                line = line[1:-1].strip()
+                character = None
+                voice = narrator_voice
+            else:
+                character = next((c for c in characters if line.startswith(c)), None)
+                if character:
+                    line = line[len(character):].strip()
+                    voice = character_voices.get(character, narrator_voice)
+                    stage_direction_mode = False
+                else:
+                    if not stage_direction_mode:
+                        stage_direction_mode = True
+                        character = None
+                        voice = narrator_voice
+                    else:
+                        line_number += 1
+                        continue
 
-        if is_dialogue:
-            tts = gTTS(text=line.strip(), lang='en')
-            output_file = f"audio/{character}-{index}.mp3"
-            tts.save(output_file)
+            # Skip line if it only contains whitespace characters
+            if not line.strip():
+                line_number += 1
+                continue
+
+            output_file = f"{output_dir}/{character or 'NARRATOR'}-{line_number}.mp3"
             audio_files.append(output_file)
+            tts = gTTS(text=line, lang=voice["lang"], tld=voice["accent"])
+            tts.save(output_file)
 
-    print(f"Generated audio files: {audio_files}")
+            line_number += 1
+
     return audio_files
 
-def concatenate_audio(audio_files, output_file):
-    print(f"Concatenating audio files: {audio_files}")
+def concatenate_audio(audio_files_dict, output_file):
+    print(f"Concatenating audio files: {audio_files_dict}")
 
     concatenated_audio = AudioSegment.empty()
 
-    for audio_file in audio_files:
+    for character, audio_file in audio_files_dict.items():
         segment = AudioSegment.from_file(audio_file, format="mp3")  # Change format to "mp3"
         concatenated_audio += segment
 

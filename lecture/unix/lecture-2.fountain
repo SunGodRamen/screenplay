@@ -1,0 +1,127 @@
+FADE IN:
+
+INT. CIA CLASSROOM - LATER
+
+Mizrahi begins his lecture on basic file operations and permissions.
+
+PROFESSOR MIZRAHI
+Welcome back, everyone. Today, we'll be covering basic file operations and permissions. These are essential concepts for anyone working with Unix systems.
+
+Mizrahi opens a terminal window on his laptop.
+
+PROFESSOR MIZRAHI
+Let's start with file types and attributes. In Unix, everything is a file. There are several types of files, such as regular files, directories, symbolic links, and device files. You can use the 'ls -l' command to view the attributes of a file.
+
+Mizrahi demonstrates by using the 'ls -l' command to view the attributes of a file.
+
+PROFESSOR MIZRAHI
+Now, let's talk about basic file operations. You can perform basic file operations, such as creating, moving, copying, and deleting files, using commands like 'mkdir', 'mv', 'cp', and 'rm'.
+
+Mizrahi demonstrates by creating a new directory called 'test', moving a file into the directory, copying the file to a new location, and deleting the file.
+
+PROFESSOR MIZRAHI
+Next, let's talk about file permissions. File permissions determine who can access a file and what actions they can perform on the file. There are three types of permissions: read, write, and execute, and they can be set for the owner of the file, the group that the file belongs to, and everyone else.
+
+PROFESSOR MIZRAHI
+Let's take a closer look at file permissions. File permissions are an important part of Unix systems, as they allow you to control who can access your files and what they can do with them.
+
+Mizrahi opens a terminal window on his laptop.
+
+PROFESSOR MIZRAHI
+To view the permissions of a file, you can use the 'ls -l' command. The output of the 'ls -l' command shows you the file type, permissions, owner, group, size, and modification date.
+
+Mizrahi demonstrates by using the 'ls -l' command to view the permissions of a file.
+
+PROFESSOR MIZRAHI
+As you can see, the permissions are represented by nine characters: three for the owner, three for the group, and three for everyone else. The characters can be 'r' for read, 'w' for write, and 'x' for execute. If a character is missing, it is represented by a '-'.
+
+Mizrahi explains the meaning of each character and what it represents.
+
+PROFESSOR MIZRAHI
+Now, let's talk about how to change file permissions. You can change file permissions using the 'chmod' command. The 'chmod' command allows you to add or remove permissions for the owner, group, and everyone else.
+
+Mizrahi demonstrates by using the 'chmod' command to add read and write permissions for the owner of a file.
+
+PROFESSOR MIZRAHI
+When you run the 'chmod' command, you can use symbolic or numeric mode to set permissions. In symbolic mode, you use letters to represent the permissions you want to add or remove. In numeric mode, you use a three-digit number to represent the permissions.
+
+Mizrahi explains the difference between symbolic and numeric mode and demonstrates how to use both.
+
+PROFESSOR MIZRAHI
+Now that we've covered how to view and modify file permissions, let's take a closer look at what happens with file permissions at a fundamental level.
+
+Mizrahi opens a terminal window on his laptop.
+
+PROFESSOR MIZRAHI
+In Unix, file permissions are implemented using bits. Each file has a set of bits that determine its permissions. There are three types of bits: read, write, and execute. The read bit allows the user to read the file, the write bit allows the user to modify the file, and the execute bit allows the user to run the file.
+
+Mizrahi explains the meaning of each bit and what it represents.
+
+PROFESSOR MIZRAHI
+The bits are stored in the file's inode, which is a data structure that contains information about the file, such as its size, location on disk, and permissions.
+
+Mizrahi demonstrates by using the 'ls -i' command to view the inode of a file.
+
+PROFESSOR MIZRAHI
+When you change file permissions using the 'chmod' command, you are actually changing the permissions bits in the inode of the file.
+
+Mizrahi demonstrates by using the 'chmod' command to modify the permissions of a file, and then using the 'ls -l' command to view the new permissions.
+
+PROFESSOR MIZRAHI
+File permissions are an essential part of Unix systems, as they allow you to control access to your files and keep your data secure.
+
+PROFESSOR MIZRAHI
+Finally, let's talk about file access control lists (ACLs). ACLs allow you to set fine-grained permissions for files and directories. They are useful when you need to grant access to specific users or groups.
+
+PROFESSOR MIZRAHI
+Now, let's take a closer look at ACLs. ACLs are used to set fine-grained permissions for files and directories. They allow you to grant or restrict access to specific users or groups.
+
+Mizrahi opens a terminal window on his laptop.
+
+PROFESSOR MIZRAHI
+To view the ACLs of a file, you can use the 'getfacl' command. The output of the 'getfacl' command shows you the users and groups that have permissions for the file, as well as the type of permission they have.
+
+Mizrahi demonstrates by using the 'getfacl' command to view the ACLs of a file.
+
+PROFESSOR MIZRAHI
+As you can see, the output of the 'getfacl' command shows you the users and groups that have permissions for the file, as well as the type of permission they have.
+
+Mizrahi explains the meaning of each entry in the ACL and what it represents.
+
+PROFESSOR MIZRAHI
+Now, let's talk about how to modify ACLs. You can modify ACLs using the 'setfacl' command. The 'setfacl' command allows you to add or remove permissions for specific users or groups.
+
+Mizrahi demonstrates by using the 'setfacl' command to add read and write permissions for a specific user to a file.
+
+PROFESSOR MIZRAHI
+When you run the 'setfacl' command, you can use the '-m' option to modify ACLs. You can specify the user or group you want to grant permissions to, as well as the type of permission you want to grant.
+
+Mizrahi explains the syntax of the 'setfacl' command and demonstrates how to use it.
+
+PROFESSOR MIZRAHI
+That's it for ACLs. Remember that ACLs are an essential tool for setting fine-grained permissions for your files and directories.
+
+PROFESSOR MIZRAHI
+That's it for today's lecture on file operations and permissions. For tomorrow's class, I want you to practice what we've covered today by completing the following assignment:
+
+Mizrahi opens a file on his laptop and reads from it.
+
+PROFESSOR MIZRAHI
+Create a new directory called 'assignments' in your home directory. Inside the 'assignments' directory, create a new file called 'file1.txt'. Set the permissions of 'file1.txt' so that the owner can read and write to the file, but the group and everyone else can only read the file.
+
+Mizrahi explains the assignment in detail.
+
+PROFESSOR MIZRAHI
+Once you've completed the assignment, submit your solution by emailing it to me. Make sure to include your full name and the assignment number in the subject line of your email.
+
+The recruits take notes, preparing to complete the assignment.
+
+PROFESSOR MIZRAHI
+That's all for today. Remember to practice what you've learned and ask questions if you need help. See you tomorrow.
+
+The recruits begin to pack up their belongings as Mizrahi leaves the room.
+
+FADE OUT.
+
+
+

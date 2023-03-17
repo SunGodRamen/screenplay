@@ -1,0 +1,139 @@
+FADE IN:
+
+INT. CIA CLASSROOM - LATER
+
+Mizrahi is beginning his lecture on advanced file operations and file systems.
+
+PROFESSOR MIZRAHI
+Welcome back, everyone. Today we're going to be covering advanced file operations and file systems. This is where things start to get a bit more complex, so make sure you're paying close attention.
+
+Mizrahi opens a terminal window on his laptop.
+
+PROFESSOR MIZRAHI
+Let's start by talking about different types of file systems. There are several types of file systems, each with its own unique features and characteristics.
+
+PROFESSOR MIZRAHI
+Let's talk about the different types of file systems. There are several types of file systems, each with its own unique features and characteristics.
+
+Mizrahi opens a terminal window on his laptop.
+
+PROFESSOR MIZRAHI
+The most common file system used in Unix systems is ext4. It's a mature file system that has been around for a long time and is widely used because of its stability and reliability.
+
+Mizrahi explains the advantages of ext4, such as its support for large file sizes, its ability to recover from crashes quickly, and its ability to handle large directories.
+
+PROFESSOR MIZRAHI
+Another popular file system is ZFS, which is commonly used in enterprise settings. ZFS is known for its advanced features, such as snapshotting, copy-on-write, and data compression.
+
+Mizrahi explains the advantages of ZFS, such as its ability to handle large amounts of data, its data integrity features, and its support for RAID.
+
+PROFESSOR MIZRAHI
+Other file systems, such as XFS, Btrfs, and JFS, each have their own unique features and advantages. XFS is a high-performance file system that was designed for use on large-scale storage systems.
+
+Mizrahi explains the advantages of XFS, such as its ability to handle large files and large directories, as well as its fast recovery time after a crash.
+
+PROFESSOR MIZRAHI
+However, XFS can be more complex to manage than other file systems, and it may not be the best choice for smaller systems.
+
+Mizrahi moves on to discussing Btrfs, a newer file system that has gained popularity in recent years.
+
+PROFESSOR MIZRAHI
+Btrfs is a modern file system that was designed with features such as snapshots and built-in RAID support. It's a good choice for systems that require advanced data protection and flexibility.
+
+Mizrahi explains the advantages of Btrfs, such as its support for data compression, snapshots, and built-in RAID support.
+
+PROFESSOR MIZRAHI
+However, Btrfs can be more complex to manage than other file systems, and it may not be as stable as more mature file systems such as ext4.
+
+Mizrahi finishes by discussing JFS, another file system that has been around for a long time.
+
+PROFESSOR MIZRAHI
+JFS is a mature file system that has been around for a long time. It's a good choice for systems that require stability and reliability.
+
+Mizrahi explains the advantages of JFS, such as its support for large files and directories, as well as its fast recovery time after a crash.
+
+PROFESSOR MIZRAHI
+However, JFS may not be the best choice for systems that require advanced features such as built-in RAID support or data compression.
+
+PROFESSOR MIZRAHI
+Choosing the right file system for your needs depends on several factors, such as the size of your storage, the type of data you're storing, and the level of performance you require.
+
+PROFESSOR MIZRAHI
+Now, let's talk about some of the more advanced features of file systems. One important concept to understand is inodes.
+PROFESSOR MIZRAHI
+Now, let's talk about inodes. An inode is a data structure used by a file system to store information about a file.
+
+Mizrahi opens a terminal window on his laptop.
+
+PROFESSOR MIZRAHI
+Each file in a file system is represented by an inode. The inode stores information such as the file's owner, permissions, timestamps, and the location of the file's data on disk.
+
+Mizrahi demonstrates by using the 'ls -i' command to show the inode numbers of files in a directory.
+
+PROFESSOR MIZRAHI
+You can use the inode number to identify a specific file on a file system, even if it has a different name or is located in a different directory.
+
+PROFESSOR MIZRAHI
+Inodes are an essential part of managing a file system. They allow the file system to keep track of all the files on the disk, and they help to optimize file access and storage.
+
+PROFESSOR MIZRAHI
+Inodes provide a way for the file system to keep track of information about a file, such as its owner, permissions, timestamps, and the location of its data on disk.
+
+Mizrahi demonstrates by using the 'stat' command to display the information stored in an inode.
+
+PROFESSOR MIZRAHI
+The information stored in an inode is critical for managing a file system. It allows the file system to track all the files on the disk and to optimize file access and storage.
+
+Mizrahi explains the importance of inodes in improving the performance of file systems.
+
+PROFESSOR MIZRAHI
+Inodes can help improve the performance of a file system by allowing the file system to quickly locate and access files on the disk. They also allow the file system to use techniques such as block allocation and free space management to optimize the storage of data on the disk.
+
+PROFESSOR MIZRAHI
+Now, let's talk about how to set disk quotas for users and groups. Disk quotas are a way to limit the amount of disk space that a user or group can use on a file system.
+
+Mizrahi opens a terminal window on his laptop.
+
+PROFESSOR MIZRAHI
+The 'setquota' command is used to set disk quotas for users and groups. Let's say we want to set a disk quota of 10GB for the user 'jdoe' on the '/home' file system.
+
+Mizrahi demonstrates by using the 'setquota' command with the appropriate options.
+
+PROFESSOR MIZRAHI
+First, we need to create a quota file using the 'edquota' command. Then, we can use the 'setquota' command to set the limits.
+
+Mizrahi explains the options used in the 'setquota' command, such as the '-u' option to set the quota for a specific user and the '-b' option to set the quota in bytes.
+
+PROFESSOR MIZRAHI
+We can also set quotas for groups using the '-g' option.
+
+Mizrahi demonstrates by setting a disk quota for a group using the 'setquota' command.
+
+PROFESSOR MIZRAHI
+Setting disk quotas for users and groups can help ensure that a file system does not run out of space and can improve the overall performance of the system.
+
+PROFESSOR MIZRAHI
+Now, let's talk about hard links and symbolic links. Links are used to create multiple names for the same file.
+
+Mizrahi explains the differences between hard links and symbolic links, as well as how to create and use them.
+
+PROFESSOR MIZRAHI
+That's it for advanced file operations and file systems. Remember to take notes and ask questions if you need help.
+
+PROFESSOR MIZRAHI
+Now, for your assignment due in 3 hours, I want you to create a shell script that will set disk quotas for a specific user on a file system of your choice. Your script should take the username and the quota limit as command-line arguments and should use the 'setquota' command to set the limits.
+
+The recruits begin to take notes and ask questions about the assignment.
+
+PROFESSOR MIZRAHI
+Remember to test your script thoroughly and to make sure it works correctly before submitting it. I will be grading based on the accuracy of your script and the efficiency of your code.
+
+Mizrahi hands out a sheet of paper with the assignment details.
+
+PROFESSOR MIZRAHI
+Good luck, and I look forward to seeing your work.
+
+FADE OUT.
+
+
+

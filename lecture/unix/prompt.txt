@@ -1,0 +1,151 @@
+Using fountain screenplay format; we will be imagining the course on unix systems for software engineers and network administrators at the Central Intelligence Agency, taught by Professor Barak Mizrahi. 
+Professor Mizrahi teaches network administration and computer science at MIT. Only the dean of MIT knows his secretive past as an infiltration engineer for the Israeli Defense Forces
+Mizrahi is from a long line of military men, but as a child he frequently got in trouble for exploiting vulnerabilities in the network on the military base he grew up on. 
+Due to his profinity for computer systems, the government turned him from the line of command to use his talents. He went along with this at his father's request that he not commit his life to the government as he had. 
+As the most effective hacker of his generation; he obtained highly classified information from the CIA's headquarter system network.
+When he considered his debts to his country fulfilled, he became a professor at MIT, in an attempt to rekindle the curiosity he felt in his youth. 
+Due to recent political unrest between the United States and China, the Cia has approached him to offer insight to their agents.
+The professors preferred computer languages are C, Rust, Ruby, lua, perl, and bash. The professor uses nVim and a Mac computer to teach.
+
+The course is meant to be a crash course for the CIA's younger recruits, who will be participating in cyber warfare with the opposing forces.
+there will be two lectures a day 
+- Introduction to Unix systems and the command line interface
+    Unix architecture and history
+    Basic Unix commands
+    File system organization
+    Introduction to text editors (e.g., nVim)
+    Customizing the Unix environment
+
+- Basic file operations and permissions
+    File types and attributes
+    Basic file operations (e.g., creating, moving, copying, deleting files)
+    Understanding file permissions
+    Modifying file permissions using chmod and chown
+    File access control lists (ACLs)
+
+- Advanced file operations and file systems
+    File system types (e.g., ext4, ZFS)
+    File system layout and organization
+    Understanding inodes
+    Disk quotas
+    Hard links and symbolic links
+
+- Introduction to shell scripting
+    Basic syntax and structure of shell scripts
+    Variables and data types
+    Conditional statements
+    Loops and iteration
+    Basic input and output
+
+- Advanced shell scripting
+    Functions and scope
+    Regular expressions and pattern matching
+    Command line arguments
+    Script debugging and error handling
+    Working with files and directories
+
+- Process management and scheduling
+    Processes and threads
+    Process lifecycle
+    Process scheduling algorithms
+    Process priorities
+    
+- Interprocess communication (IPC)
+    Signals and inter-process communication
+    Understanding signals and signal handling
+    Common signals and their meanings
+    Interprocess communication using pipes
+    Interprocess communication using sockets
+    Interprocess communication using shared memory
+
+- Network programming and socket programming
+    Introduction to TCP/IP networking
+    Sockets and socket programming
+    Client-server architecture
+    Network protocols (e.g., HTTP, FTP, SSH)
+    Network debugging and troubleshooting
+
+- Introduction to system administration
+    Overview of system administration tasks
+    The role of the system administrator
+    Basic system administration tools (e.g., ps, top, df)
+    Remote access to systems (e.g., SSH, Telnet)
+    Logging and monitoring
+
+- Managing users and groups
+    User and group management
+    Understanding user and group permissions
+    User authentication and password policies
+    Managing user home directories
+    Managing user access to system resources
+
+- Managing file systems and storage
+    Partitioning and formatting disks
+    RAID configurations
+    Mounting and unmounting file systems
+    File system maintenance
+    Storage management best practices
+
+- Managing network services
+    Network services and daemons
+    Configuring network services (e.g., Apache, DNS, DHCP)
+    Understanding network protocols (e.g., TCP/IP, UDP)
+    Network service security best practices
+    Network service troubleshooting
+
+- Security and authentication
+    Basic security principles
+    Authentication methods (e.g., passwords, public-key cryptography)
+    Encryption and decryption
+    User and group security policies
+    File and directory permissions
+
+- Firewall and network security
+    Introduction to firewalls
+    Configuring firewalls (e.g., iptables)
+    Network security best practices
+    Network intrusion detection and prevention
+    Network monitoring and auditing
+
+- Performance monitoring and tuning
+    System performance metrics
+    Performance monitoring tools (e.g., top, vmstat)
+    Performance tuning best practices
+    Kernel tuning and optimization
+    File system tuning and optimization
+
+- System backups and recovery
+    Backup strategies and best practices
+    Backup tools and utilities (e.g., tar, rsync)
+    Incremental and differential backups
+    Disaster recovery planning
+    Data recovery and restoration
+
+- Virtualization and containerization (continued)
+    Container management
+    Dockerfile creation and best practices
+    Container networking and storage
+    Kubernetes architecture and components
+    Kubernetes deployment and management
+
+- Cloud computing and deployment
+    Introduction to cloud computing
+    Cloud computing models (e.g., IaaS, PaaS, SaaS)
+    Cloud deployment best practices
+    Cloud provider comparison (e.g., AWS, Azure, GCP)
+    Managing cloud resources using command line tools
+
+- Advanced topics in Unix systems
+    Performance analysis and tuning tools (e.g., strace, perf)
+    Advanced shell scripting (e.g., arrays, functions, libraries)
+    Advanced system administration (e.g., package management, system logging)
+    Advanced networking (e.g., VPN, IPv6, multicast)
+    Advanced security (e.g., intrusion detection, penetration testing)
+
+- Final project presentations and wrap-up
+    Final project presentations
+    Discussion of lessons learned
+    Career opportunities in Unix systems
+    Final thoughts and course review
+    End-of-course evaluations
+

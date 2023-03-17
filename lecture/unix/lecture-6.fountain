@@ -1,0 +1,44 @@
+FADE IN:
+
+EXT. CIA TRAINING CENTER - DAY
+
+Students file into the lecture hall for the sixth lecture on Unix systems.
+
+INT. LECTURE HALL - DAY
+
+PROFESSOR MIZRAHI stands at the front of the lecture hall, ready to begin.
+
+PROFESSOR MIZRAHI
+Good afternoon, everyone. Today, we'll be diving into the exciting world of network programming and socket programming, as well as system administration.
+
+Mizrahi proceeds to the whiteboard.
+
+PROFESSOR MIZRAHI
+Let's start with network programming. As you all know, networking is an essential part of modern computing. In this lecture, we'll cover the basics of networking protocols, sockets, and client-server architecture.
+
+Mizrahi proceeds to explain the basics of TCP/IP networking, and goes over the different types of sockets and their uses. He covers the client-server architecture, and delves into the various network protocols used in everyday computing.
+
+PROFESSOR MIZRAHI
+Now, let's move onto system administration. System administrators are responsible for managing, maintaining, and troubleshooting computer systems. They play a crucial role in ensuring that networks and systems run smoothly.
+
+Mizrahi goes over the tasks and responsibilities of a system administrator, including monitoring system performance, managing user accounts, and maintaining system security.
+
+PROFESSOR MIZRAHI
+We'll also cover some basic system administration tools, including the process monitoring tool 'ps', the system resource monitoring tool 'top', and the disk usage monitoring tool 'df'. These tools are essential for keeping an eye on system performance and identifying potential issues.
+
+Mizrahi moves on to discuss remote access to systems, including SSH and Telnet. He emphasizes the importance of secure remote access and best practices for remote access.
+
+PROFESSOR MIZRAHI
+Lastly, we'll cover logging and monitoring. Logs are essential for troubleshooting issues, tracking user activity, and maintaining system security. We'll discuss the importance of logging and how to configure logging on Unix systems.
+
+Mizrahi concludes the lecture.
+
+PROFESSOR MIZRAHI
+That's all for today. Remember to review the material in your textbooks and complete the assignment I've given you on process management, scheduling, and interprocess communication. See you all in the next lecture.
+
+The students pack up their belongings and file out of the lecture hall.
+
+FADE OUT.
+
+
+
