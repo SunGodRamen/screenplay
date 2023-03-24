@@ -21,6 +21,16 @@ if ! python3 -c "import reportlab" > /dev/null 2>&1; then
     exit 1
 fi
 
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <fountain_file>"
+    exit 1
+fi
+
+FOUNTAIN_FILE="$1"
+PDF_FILE="${FOUNTAIN_FILE%.fountain}.pdf"
+
+screenplain --format pdf "$FOUNTAIN_FILE" "$PDF_FILE"
+
 # Set the directories
 FOUNTAIN_DIR="$PROJECT_ROOT/fountain"
 PDF_DIR="$PROJECT_ROOT/pdf"

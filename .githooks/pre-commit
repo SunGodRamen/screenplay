@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# Set the project root directory
+PROJECT_ROOT="$(git rev-parse --show-toplevel)"
+
+# Set the script file
+SCRIPT="$PROJECT_ROOT/bin/pdf-erize.sh"
+
+# Check if the script exists
+if [ ! -f "$SCRIPT" ]; then
+    echo "Error: Script not found: $SCRIPT"
+    exit 1
+fi
+
+# Get the list of changed fountain files
+CHANGED_FOUNTAIN_FILES=$(git diff --cached --name-only --diff-filter=d | grep -E '^fountain/.*\.fountain$')
+
+if [ -n "$CHANGED_FOUNTAIN_FILES" ]; then
+    # Run the script for the changed fountain files
+    echo "Updating PDFs for changed fountain files..."
+    for s in $CHANGED_FOUNTAIN_FILES
+    do
+        rel_path="${s#fountain/}"
+        "$SCRIPT" "$PROJECT_ROOT/fountain/$rel_path"
+    done
+
+    # Stage the updated PDF files
+    git add -u -- pdf
+fi
+
