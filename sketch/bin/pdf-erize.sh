@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# Set the project root directory
+PROJECT_ROOT="$(dirname "$(realpath "$0")")/.."
+
 # Check for the screenplain command
 if ! command -v screenplain > /dev/null 2>&1; then
     echo "Error: screenplain is not installed. Please install it and try again."
@@ -18,9 +21,17 @@ if ! python3 -c "import reportlab" > /dev/null 2>&1; then
     exit 1
 fi
 
+# Set the directories
+FOUNTAIN_DIR="$PROJECT_ROOT/fountain"
+PDF_DIR="$PROJECT_ROOT/pdf"
+
+# Create the pdf directory if it doesn't exist
+mkdir -p "$PDF_DIR"
+
 # Proceed with the actual script
-for s in ./*.fountain
+for s in "$FOUNTAIN_DIR"/*.fountain
 do
-    screenplain --format pdf "$s" "pdf/${s%.fountain}.pdf"
+    filename=$(basename "$s" .fountain)
+    screenplain --format pdf "$s" "$PDF_DIR/$filename.pdf"
 done
 
