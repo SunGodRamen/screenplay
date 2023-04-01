@@ -1,11 +1,5 @@
 #!/usr/bin/env sh
 
-# check for the required commands and libraries
-if ! command -v y2s > /dev/null 2>&1; then
-    echo "Error: y2s is not installed. Please install it and try again."
-    exit 1
-fi
-
 if ! command -v screenplain > /dev/null 2>&1; then
     echo "Error: Screenplain is not installed. Please install it and try again."
     exit 1
@@ -17,7 +11,7 @@ if ! python3 -c "import reportlab" > /dev/null 2>&1; then
 fi
 
 # check for the required arguments
-if [ "$#" -ne 1 ]; then
+if [ "$#" -ne 2 ]; then
     echo "Usage: $0 <input_file>"
     exit 1
 fi
@@ -35,11 +29,11 @@ fi
 output_file=$2
 
 # convert the YAML file to a plain text document using y2s
-y2s "$input_file" > tmp.txt
+cp "$input_file" tmp.txt
 
 # convert the plain text document to a PDF using Screenplain, if the output file doesn't exist or is older than the input file
 if [ ! -e "$output_file" ] || [ "$input_file" -nt "$output_file" ]; then
-    screenplain tmp.txt "$output_file"
+    screenplain --format pdf tmp.txt "$output_file"
 fi
 
 # delete the plain text document
